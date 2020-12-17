@@ -496,8 +496,6 @@ img {
     text-decoration: none;
     color: white;
     font-size: 15px;
-
-
 }
 
 /* style for sayere nazarat container  */
@@ -697,7 +695,7 @@ img {
 /* style for download right side container where the images and the following icons reside */
 .download-right-container {
     height: 100%;
-    width: 30%;
+    width: 35%;
 
     margin-right: auto;
     display: flex;
@@ -1368,7 +1366,7 @@ span {
 
 #navbar-top {
 
-    background-color: lightblue;
+    background-color: #f8f7ef;
     height: 8vh;
     width: 100vw;
     text-align: right;
@@ -1378,8 +1376,9 @@ span {
 }
 
 #doctors-list-container {
-    width: 70%;
+    width: 65%;
     height: 100%;
+    margin-right: 30px;
 }
 
 #navbar-top-link {
@@ -1404,6 +1403,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 40px;
 
 }
 
@@ -1418,11 +1418,23 @@ span {
 }
 
 #navbar-container {
-    width: 100%;
+    width: 100vw;
+    height: 9vw;
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    background-color: #f8f7ef;
+}
+
+#navbar{
+    border-radius: 10px;
+    width: 89.1%;
     height: 9vw;
     background-color: #1780df;
     display: flex;
     flex-direction: column;
+    direction: rtl;
+    margin-right: 78px;
 }
 
 #navbar-top-header {
@@ -1664,11 +1676,13 @@ input:checked + .slider:before {
     width: 17%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
 #doctor1-image-container {
     width: 81%;
-    height: 51%;
+    height: 48%;
     background-image: url("../images/doc1.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1849,7 +1863,7 @@ input:checked + .slider:before {
 
 #doctor2-image-container {
     width: 81%;
-    height: 51%;
+    height: 48%;
     background-image: url("../images/doc2.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1859,11 +1873,94 @@ input:checked + .slider:before {
 
 #doctor3-image-container {
     width: 81%;
-    height: 51%;
+    height: 48%;
     background-image: url("../images/doc3.png");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
     margin-top: 15px;
 }
+
+#har-anche-container{
+    background-color: #e5f2fe;
+    height: 100%;
+    width: 91%;
+    border-radius: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#har-anche{
+    width: 100%;
+    height: 250px;
+    background-color: #f8f7ef;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#har-anche-header{
+    font-size: 20px;
+    width: 98%;
+    font-weight: 700!important;
+    margin-top: 20px;
+    direction: rtl;
+    text-align: right;
+    margin-right: 25px;
+}
+
+#har-anche-paragraph{
+    margin-top: 20px;
+    margin-right: 23px;
+    color: #6e7794;
+    font-size: 15px;
+    direction: rtl;
+    text-align: right;
+    line-height: 30px;
+}
+
+#har-anche-short-paragraph{
+    margin-top: 20px;
+    color: #6e7794;
+    font-size: 15px;
+    direction: rtl;
+    text-align: right;
+    line-height: 30px;
+    width: 98%;
+    margin-right: 21px;
+}
+
+#har-anche-button-container{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+#bishtar-bekhanid-button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-left: 25px;
+    background-color: #fb815e;
+    border-radius: 10px;
+    height: 35px;
+    width: 120px;
+    text-align: center;
+    padding-top: 5px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+#bishtar-bekhanid-text{
+    margin-right: 5px;
+}
+
+
 
