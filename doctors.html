@@ -23,6 +23,35 @@
 
     </style>
 </head>
+<script>
+    function hide(){
+        document.getElementById('magnifier-container').style.display='none'
+        document.getElementById('jostejoo-searchbar').style.width='87%'
+        document.getElementById('jostejoo-searchbar').style.border='2px solid gray'
+        document.getElementById('jostejoo-searchbar').style.borderRadius='10px'
+
+    }
+
+    function show(){
+        document.getElementById('jostejoo-searchbar').style.width='80%'
+        document.getElementById('magnifier-container').style.display='flex'
+        document.getElementById('magnifier-container').style.flexDirection='column'
+        document.getElementById('magnifier-container').style.justifyContent='center'
+        document.getElementById('magnifier-container').style.alignItems='center'
+        document.getElementById('jostejoo-searchbar').style.borderTop='2px solid gray'
+        document.getElementById('jostejoo-searchbar').style.borderBottom='2px solid gray'
+        document.getElementById('jostejoo-searchbar').style.borderLeft='2px solid gray'
+        document.getElementById('jostejoo-searchbar').style.borderRight='none'
+        document.getElementById('jostejoo-searchbar').style.borderTopLeftRadius='10px'
+        document.getElementById('jostejoo-searchbar').style.borderBottomLeftRadius='10px'
+        document.getElementById('jostejoo-searchbar').style.borderTopRightRadius='0px'
+        document.getElementById('jostejoo-searchbar').style.borderBottomRightRadius='0px'
+        d
+
+
+
+    }
+</script>
 <body>
 
 <header>
@@ -118,8 +147,13 @@
             <div id="search-top-image-container"></div>
             <div id="right-search-container">
                 <div id="search-top-container"><h5 id="jostejoo-dar-natayej">جستجو در نتایج</h5></div>
-                <div id="jostejoo-searchbar-container"><input type="text" id="jostejoo-searchbar" lang="ar-sa"
-                                                              placeholder="نام یا نام خانوادگی پزشک را بنویسید "/></div>
+
+                <div id="jostejoo-searchbar-container">
+                    <div id="magnifier-container">
+                    <svg id="help" data-v-027aed6c="" xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="position-absolute search-icon text-steel feather feather-search"><circle data-v-027aed6c="" cx="11" cy="11" r="8"></circle><line data-v-027aed6c="" x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                    <input onclick="hide()" onfocusout="show()" type="text" id="jostejoo-searchbar" lang="ar-sa" placeholder="نام یا نام خانوادگی پزشک را بنویسید "/>
+                </div>
             </div>
             <a href="#" class="right-side-dropdown">
                 <svg data-v-90eca2a0="" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"

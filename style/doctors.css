@@ -1486,24 +1486,44 @@ span {
 #jostejoo-searchbar {
 
     border: 2px solid gray;
+    border-right: none;
     width: 80%;
     height: 70%;
-    margin-top: 30px;
     direction: rtl;
     text-align: center;
     language: "ar-sa";
     margin-top: 20px;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#help{
+
 }
 
 #jostejoo-searchbar-container {
     display: flex;
     height: 40%;
     width: 100%;
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin-top: 20px;
     align-items: center;
     justify-content: center;
+}
+
+#magnifier-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 42px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid gray;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
 
